@@ -16,14 +16,13 @@ body{
 
 .container{
   height: 100vh;
-  width:90%;
+  width:100%;
   margin:auto;
   display:grid;
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: repeat(4,auto);
   align-items: center;
 }
-
 .titles{
   grid-column: 1/-1;
   text-align: center;
@@ -31,7 +30,6 @@ body{
 .titles h1{
   letter-spacing: 3px;
 }
-
 .radio-btn{
   grid-column: 1/-1;
   text-align: center;
@@ -42,7 +40,6 @@ body{
 .radio-btn .campo-texto{
   font-weight: bold;
 }
-
 .btns{
   grid-column: 1/-1;
   height: 200px;
@@ -66,13 +63,21 @@ body{
 .btns .btn-submit:hover{
   background-color: #c0cdaa;
 }
-
 .btns .input-pass:focus{
   outline: none;
 }
 
-.copy{
-  grid-column: 1/-1;
-  text-align: center;
+ .copy{
+  grid-column:1/-1;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
   text-transform: capitalize;
+  letter-spacing: 1px;
+}
+ .copy a{
+  color:#f08724;
+  font-size:20px;
 }
